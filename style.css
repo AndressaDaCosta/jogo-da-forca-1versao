@@ -1,0 +1,138 @@
+html {
+  text-align: center; /*set this with the body inline-block to center the body*/
+  background: url("img/medieval-town.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1vh; /*set root font size, and then use rem throughout the file*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 66vh) {
+  /*portrait screen*/
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+body {
+  background-color: #19452bed;
+  color: #cacaca; 
+  font-family: 'Cabin Sketch', 'Arial';
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 100vh) {
+  /*portrait screen*/
+  body {
+    width: 100vw;
+   
+  }
+}
+
+svg {
+  height: 36vh;
+}
+
+@media (max-width: 40vh) {
+  /*portrait screen*/
+  svg {
+    width: 90vw;
+  }
+}
+
+h1 {
+  font-size: 8.4rem;
+  font-weight: 100;
+  margin: 2.5rem 0;
+  height: 36vh;
+}
+
+h2 {
+  font-size: 4.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 100;
+  margin: 1.7rem;
+}
+
+#keypad a {
+  font-size: 6.4rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+#keypad a.finished {
+  /*reset pointer after the game is over to prevent further clicking*/
+  cursor: default;
+}
+
+#chute {
+  font-size: 6.2rem;
+  margin: 2.4rem auto;
+}
+
+#keypad .correct-letter {
+  /*letters which belong to the word*/
+  color: #2ECC71;
+  cursor: no-drop;
+}
+
+#keypad .incorrect-letter {
+  /*letters which don't belong to the word*/
+  color: #D8334A;
+  cursor: no-drop;
+}
+
+.esconder {
+  /*visibility: esconder;*/
+  display: none;
+}
+
+[status='escapou'] {
+  /*a status of the tituloJogo*/
+  color: #2ECC71;
+}
+
+[status='enforcado'] {
+  /*a status of the tituloJogo*/
+  color: #D8334A;
+}
+
+#contador {
+  margin-bottom: 1rem;
+}
+span {
+  font-size: 3.3rem;
+ 
+}
+
+#vitorias,
+#perdas {
+  margin-right: 4rem;
+ 
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  /*when buttons are being pressed down*/
+  position: relative;
+  top: 2px;
+}
+
+svg {
+  stroke: #cacaca;
+  stroke-width: 5.8;
+  stroke-linecap: round;
+}
