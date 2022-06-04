@@ -1,19 +1,13 @@
 html {
   text-align: center; /*set this with the body inline-block to center the body*/
-  background: url("img/medieval-town.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background: url("img/medieval-town.jpeg"); */
+  background-color: #f1f1f1;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   font-size: 1vh; /*set root font size, and then use rem throughout the file*/
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (max-width: 66vh) {
-  /*portrait screen*/
-  html {
-    font-size: 1.5vw;
-  }
 }
 
 body {
@@ -30,25 +24,6 @@ body {
   justify-content: space-around;
 }
 
-@media (max-width: 100vh) {
-  /*portrait screen*/
-  body {
-    width: 100vw;
-   
-  }
-}
-
-svg {
-  height: 36vh;
-}
-
-@media (max-width: 40vh) {
-  /*portrait screen*/
-  svg {
-    width: 90vw;
-  }
-}
-
 h1 {
   font-size: 8.4rem;
   font-weight: 100;
@@ -62,6 +37,10 @@ h2 {
   cursor: pointer;
   font-weight: 100;
   margin: 1.7rem;
+}
+
+svg {
+  height: 36vh;
 }
 
 #keypad a {
@@ -135,4 +114,26 @@ svg {
   stroke: #cacaca;
   stroke-width: 5.8;
   stroke-linecap: round;
+}
+
+@media (max-width: 40vh) {
+  /*portrait screen*/
+  svg {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 66vh) {
+  /*portrait screen*/
+  html {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 100vh) {
+  /*portrait screen*/
+  body {
+    width: 100vw;
+   
+  }
 }
